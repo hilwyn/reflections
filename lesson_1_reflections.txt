@@ -1,0 +1,53 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+-- Diff pointed out the line number that were changed. It made debuggine easier
+
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+-- can help you revert changes and see what steps ld to where u currently are.
+
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+--manuall choosing gives greater flexibility and prevents clutter. automatic saving can ensure commits however they may not be very logical and can take up unnecessary storage.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+-- so that the effects of the changes can be seen and tracked as a snapshot in time since all documents would be related in a project
+
+How can you use the commands git log and git diff to view the history of files?
+-- git log gives you the ID of the commit while git diff compages both commits
+
+How might using version control make you more confident to make changes that could break something?
+-- it would be easy to revert changes or experiment on code knowing that it can be reverted easily
+
+
+Now that you have your workspace set up, what do you want to try using Git for?
+-- I want to use it for team software development
+
+
+--Compare two commits, printing each line that is present in one commit but not the other.
+						git diff
+will do this. It takes two arguments - the two commit ids to compare. 
+
+
+--Make a copy of an entire Git repository, including the history, onto your own computer.
+						git clone
+will do this. It takes one argument - the url of the repository to copy. 
+
+
+Temporarily reset all files in a directory to their state at the time of a specific commit.
+						git checkout
+ will do this. It takes one argument - the commit ID to restore. 
+
+
+Show the commits made in this repository, starting with the most recent.
+							git log 
+will do this. It doesn't take any arguments.
+
+--One thing cloning and copying have in common is that they both make a copy - and all the relevant files will be copied.
+
+git commit [original file] [new file]
+
+
+
+
+
